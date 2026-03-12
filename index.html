@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roxy Art's Creations</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-white text-zinc-900">
+
+    <div class="pt-12 text-center">
+        <img src="images/roxyartsclipped.png" alt="Roxy Arts Logo" class="mx-auto w-80 md:w-[28rem] h-auto">
+    </div>
+
+    <nav class="p-6 flex justify-between items-center max-w-6xl mx-auto">
+        <h1 class="text-2xl font-light tracking-widest uppercase text-zinc-500">Roxy Arts Studio</h1>
+        <div class="space-x-8 text-sm uppercase tracking-tight">
+            <a href="#" class="hover:text-zinc-400 transition">Gallery</a>
+            <a href="#" class="hover:text-zinc-400 transition">About Us</a>
+            <a href="#" class="text-zinc-400 cursor-not-allowed">Shop (Coming Soon)</a>
+        </div>
+    </nav>
+
+    <header class="py-20 px-6 text-center max-w-3xl mx-auto">
+        <h2 class="text-5xl font-light mb-6">Handmade. Eccentric. Ours.</h2>
+        <p class="text-zinc-500 leading-relaxed">A collection of physical artifacts and digital experiments by two people who can't stop making things.</p>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 pb-20">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <div class="group cursor-pointer">
+                <div class="aspect-square bg-zinc-200 overflow-hidden mb-4">
+                    <img src="images/thissite.png" alt="Artwork 1" class="object-cover w-full h-full grayscale hover:grayscale-0 transition duration-500">
+                </div>
+                <h3 class="text-lg font-medium">The First Creation</h3>
+                <p class="text-sm text-zinc-400 italic">This site</p>
+            </div>
+
+            <div class="group cursor-pointer">
+                <div class="aspect-square bg-zinc-200 overflow-hidden mb-4">
+                    <img src="images/bouqet2.jpg" alt="Artwork 2" class="object-cover w-full h-full grayscale hover:grayscale-0 transition duration-500">
+                </div>
+                <h3 class="text-lg font-medium">Ribbon Bouquet</h3>
+                <p class="text-sm text-zinc-400 italic">Medium: Ribbon</p>
+            </div>
+
+            <div class="group cursor-pointer">
+                <div class="aspect-square bg-zinc-200 overflow-hidden mb-4">
+                    <img src="images/wcp.jpg" alt="Artwork 3" class="object-cover w-full h-full grayscale hover:grayscale-0 transition duration-500">
+                </div>
+                <h3 class="text-lg font-medium">Ribbon Bouquet</h3>
+                <p class="text-sm text-zinc-400 italic">Medium: Ribbon</p>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="p-10 text-center border-t border-zinc-200 text-xs text-zinc-400 uppercase tracking-widest">
+        &copy; 2026 Roxy Arts Studio. Built for the future.
+    </footer>
+
+</body>
+</html>
