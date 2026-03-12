@@ -16,54 +16,59 @@
         .text-roxy-teal { color: #008B8B; }
         .hover-teal:hover { color: #008B8B; }
         .border-roxy-teal { border-color: #008B8B; }
+        
+        /* Smooth transitions for the whole site */
+        * { transition: all 0.3s ease; }
     </style>
 </head>
 <body class="bg-white text-zinc-900">
 
-    <div class="pt-12 text-center">
-        <img src="images/roxyartsclipped.png" alt="Roxy Arts Logo" class="mx-auto w-80 md:w-[28rem] h-auto">
+    <div class="pt-12 px-4 text-center">
+        <a href="index.html">
+            <img src="images/roxyartsclipped.png" alt="Roxy Arts Logo" class="mx-auto w-72 md:w-[28rem] h-auto hover:opacity-90">
+        </a>
     </div>
 
-    <nav class="p-6 flex justify-between items-center max-w-6xl mx-auto font-arts uppercase tracking-wider">
-        <h1 class="text-2xl font-bold text-zinc-400">
+    <nav class="p-6 flex flex-col md:flex-row justify-between items-center max-w-6xl mx-auto font-arts uppercase tracking-wider">
+        <h1 class="text-xl md:text-2xl font-bold text-zinc-400 mb-4 md:mb-0">
             <span class="text-roxy-purple">Roxy</span> Arts Studio
         </h1>
         <div class="space-x-8 text-sm font-bold">
             <a href="#" class="hover-teal transition">Gallery</a>
             <a href="#" class="hover-teal transition">About Us</a>
-            <a href="#" class="text-zinc-300 cursor-not-allowed">Shop</a>
+            <span class="text-zinc-300 cursor-not-allowed">Shop</span>
         </div>
     </nav>
 
-    <header class="py-20 px-6 text-center max-w-3xl mx-auto">
-        <h2 class="text-6xl font-roxy text-roxy-purple mb-4">Handmade. Eccentric. Ours.</h2>
-        <p class="font-arts text-zinc-500 text-lg">A collection of physical artifacts and digital experiments.</p>
+    <header class="py-12 md:py-20 px-6 text-center max-w-3xl mx-auto">
+        <h2 class="text-5xl md:text-7xl font-roxy text-roxy-purple mb-4">Handmade. Eccentric. Ours.</h2>
+        <p class="font-arts text-zinc-500 text-lg md:text-xl">A collection of physical artifacts and digital experiments.</p>
     </header>
 
     <main class="max-w-6xl mx-auto px-6 pb-20">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
             
             <div class="group cursor-pointer">
-                <div class="aspect-square bg-zinc-100 overflow-hidden mb-4 rounded-xl border border-zinc-100 group-hover:border-roxy-teal transition-colors">
-                    <img src="images/thissite.png" alt="This Site" class="object-cover w-full h-full grayscale group-hover:grayscale-0 transition duration-500">
+                <div class="aspect-square bg-zinc-50 overflow-hidden mb-4 rounded-2xl border border-zinc-100 group-hover:border-roxy-teal group-hover:shadow-lg transition-all">
+                    <img src="images/thissite.png" alt="This Site" class="object-cover w-full h-full grayscale group-hover:grayscale-0 transition duration-700">
                 </div>
-                <h3 class="text-xl font-roxy text-roxy-purple leading-tight">The First Creation</h3>
+                <h3 class="text-2xl font-roxy text-roxy-purple leading-tight">The First Creation</h3>
                 <p class="font-arts text-sm text-zinc-400 italic">This site</p>
             </div>
 
             <div class="group cursor-pointer">
-                <div class="aspect-square bg-zinc-100 overflow-hidden mb-4 rounded-xl border border-zinc-100 group-hover:border-roxy-teal transition-colors">
-                    <img src="images/bouqet2.jpg" alt="Ribbon Bouquet" class="object-cover w-full h-full grayscale group-hover:grayscale-0 transition duration-500">
+                <div class="aspect-square bg-zinc-50 overflow-hidden mb-4 rounded-2xl border border-zinc-100 group-hover:border-roxy-teal group-hover:shadow-lg transition-all">
+                    <img src="images/bouqet2.jpg" alt="Ribbon Bouquet" class="object-cover w-full h-full grayscale group-hover:grayscale-0 transition duration-700">
                 </div>
-                <h3 class="text-xl font-roxy text-roxy-purple leading-tight">Ribbon Bouquet</h3>
+                <h3 class="text-2xl font-roxy text-roxy-purple leading-tight">Ribbon Bouquet</h3>
                 <p class="font-arts text-sm text-zinc-400 italic">Medium: Ribbon</p>
             </div>
 
             <div class="group cursor-pointer">
-                <div class="aspect-square bg-zinc-100 overflow-hidden mb-4 rounded-xl border border-zinc-100 group-hover:border-roxy-teal transition-colors">
-                    <img src="images/wcp.jpg" alt="Ribbon Bouquet" class="object-cover w-full h-full grayscale group-hover:grayscale-0 transition duration-500">
+                <div class="aspect-square bg-zinc-50 overflow-hidden mb-4 rounded-2xl border border-zinc-100 group-hover:border-roxy-teal group-hover:shadow-lg transition-all">
+                    <img src="images/wcp.jpg" alt="WCP Bouquet" class="object-cover w-full h-full grayscale group-hover:grayscale-0 transition duration-700">
                 </div>
-                <h3 class="text-xl font-roxy text-roxy-purple leading-tight">WCP Bouquet</h3>
+                <h3 class="text-2xl font-roxy text-roxy-purple leading-tight">WCP Bouquet</h3>
                 <p class="font-arts text-sm text-zinc-400 italic">Medium: Ribbon</p>
             </div>
 
@@ -71,7 +76,7 @@
     </main>
 
     <footer class="p-10 text-center border-t border-zinc-100 font-arts text-xs text-zinc-400 uppercase tracking-widest">
-        &copy; 2026 Roxy Arts Studio.
+        &copy; 2026 Roxy Arts Studio. Handmade with care.
     </footer>
 
 </body>
