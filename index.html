@@ -3,127 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Roxy Art's Creations</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
-    
-    <style>
-        .font-roxy { font-family: 'Lobster Two', cursive; }
-        .font-arts { font-family: 'Quicksand', sans-serif; }
-        
-        /* Custom Colors from your Logo */
-        .text-roxy-purple { color: #5B2E91; }
-        .text-roxy-teal { color: #008B8B; }
-        .hover-teal:hover { color: #008B8B; }
-        .border-roxy-teal { border-color: #008B8B; }
+    <title>Roxy Arts Studio | Handmade Ribbon Bouquets</title>
+    <meta name="description" content="Handmade ribbon rose bouquets and table centrepieces from Roxy Arts Studio, a small home studio run by two people who can't stop making things.">
+    <link rel="canonical" href="https://roxyartstudio.com/">
 
-        /* Lightbox Overlay Styles */
-        #lightbox {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.9);
-            z-index: 9999;
-            justify-content: center;
-            align-items: center;
-            cursor: pointer;
-        }
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Roxy Arts Studio">
+    <meta property="og:title" content="Roxy Arts Studio | Handmade Ribbon Bouquets">
+    <meta property="og:description" content="Handmade ribbon rose bouquets and table centrepieces. Handmade. Eccentric. Ours.">
+    <meta property="og:url" content="https://roxyartstudio.com/">
+    <meta property="og:image" content="https://roxyartstudio.com/images/share.jpg">
+    <meta name="twitter:card" content="summary_large_image">
 
-        #lightbox.active {
-            display: flex;
-        }
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/favicon-32.png" type="image/png">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <meta name="theme-color" content="#5b2e91">
 
-        #lightbox img {
-            max-width: 90%;
-            max-height: 90%;
-            border-radius: 8px;
-            box-shadow: 0 0 30px rgba(0,0,0,0.5);
-            transition: transform 0.3s ease;
-        }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:wght@400;700&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
 </head>
-<body class="bg-white text-zinc-900">
+<body>
 
-    <div class="pt-12 text-center">
-        <a href="index.html">
-            <img src="images/roxyartsclipped.png" alt="Roxy Arts Logo" class="mx-auto w-80 md:w-[28rem] h-auto">
+    <header class="site-header">
+        <a class="site-logo" href="/" aria-label="Roxy Arts Studio home">
+            <img src="/images/logo.webp" alt="Roxy Arts logo" width="392" height="474">
         </a>
-    </div>
-
-    <nav class="p-6 flex flex-col md:flex-row justify-between items-center max-w-6xl mx-auto font-arts uppercase tracking-wider">
-        <h1 class="text-xl md:text-2xl font-bold mb-4 md:mb-0">
-            <span class="text-roxy-purple">Roxy</span> 
-            <span class="text-roxy-teal">Arts Studio</span>
-        </h1>
-        <div class="space-x-8 text-sm font-bold">
-            <a href="#" class="hover-teal transition">Gallery</a>
-            <a href="#" class="hover-teal transition">About Us</a>
-            <span class="text-zinc-300 cursor-not-allowed">Shop</span>
-        </div>
-    </nav>
-
-    <header class="py-16 px-6 text-center max-w-3xl mx-auto">
-        <h2 class="text-6xl font-roxy text-roxy-purple mb-4">Handmade. Eccentric. Ours.</h2>
-        <p class="font-arts text-zinc-500 text-lg">A collection of physical artifacts and digital experiments.</p>
+        <nav class="site-nav" aria-label="Main">
+            <ul>
+                <li><a href="/" aria-current="page">Home</a></li>
+                <li><a href="/gallery.html">Gallery</a></li>
+                <li><a href="/about.html">About Us</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main class="max-w-6xl mx-auto px-6 pb-20">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            
-            <div class="group cursor-pointer gallery-card" onclick="openLightbox('images/thissite.png')">
-                <div class="aspect-square bg-zinc-100 overflow-hidden mb-4 rounded-xl border border-zinc-100 group-hover:border-roxy-teal transition-all">
-                    <img src="images/thissite.png" alt="Artwork 1" class="object-cover w-full h-full">
-                </div>
-                <h3 class="text-xl font-roxy text-roxy-purple">The First Creation</h3>
-                <p class="font-arts text-sm text-zinc-400 italic">This site</p>
-            </div>
+    <main>
+        <section class="hero container">
+            <h1>Handmade. Eccentric. Ours.</h1>
+            <p>Ribbon rose bouquets and table centrepieces, made by hand, one petal at a time.</p>
+        </section>
 
-            <div class="group cursor-pointer gallery-card" onclick="openLightbox('images/bouqet2.jpg')">
-                <div class="aspect-square bg-zinc-100 overflow-hidden mb-4 rounded-xl border border-zinc-100 group-hover:border-roxy-teal transition-all">
-                    <img src="images/bouqet4.png" alt="Artwork 2" class="object-cover w-full h-full">
+        <section class="section section--tint">
+            <div class="container">
+                <div class="section-head">
+                    <span class="eyebrow">Recent work</span>
+                    <h2>Fresh from the studio</h2>
                 </div>
-                <h3 class="text-xl font-roxy text-roxy-purple">Ribbon Bouquet</h3>
-                <p class="font-arts text-sm text-zinc-400 italic">Medium: Ribbon</p>
-            </div>
 
-            <div class="group cursor-pointer gallery-card" onclick="openLightbox('images/wcp.jpg')">
-                <div class="aspect-square bg-zinc-100 overflow-hidden mb-4 rounded-xl border border-zinc-100 group-hover:border-roxy-teal transition-all">
-                    <img src="images/wcp.jpg" alt="Artwork 3" class="object-cover w-full h-full">
+                <div class="grid">
+                    <article class="card">
+                        <button class="card-media" type="button" data-full="/images/ribbon-bouquet.jpg" data-title="Ribbon Bouquet">
+                            <img src="/images/ribbon-bouquet-thumb.jpg" alt="Bouquet of purple and pink satin ribbon roses on a glass shelf" width="721" height="800" loading="lazy">
+                        </button>
+                        <div class="card-body">
+                            <h3>Ribbon Bouquet</h3>
+                            <p>A posy of hand-rolled satin roses in deep purple and pink.</p>
+                            <span class="card-tag">Satin ribbon</span>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <button class="card-media" type="button" data-full="/images/wcp-bouquet.jpg" data-title="WCP Bouquet">
+                            <img src="/images/wcp-bouquet-thumb.jpg" alt="Table centrepiece of blue and purple ribbon roses on a mirrored base with a table number card" width="689" height="800" loading="lazy">
+                        </button>
+                        <div class="card-body">
+                            <h3>WCP Bouquet</h3>
+                            <p>An event table centrepiece of blue and purple ribbon roses.</p>
+                            <span class="card-tag">Satin ribbon</span>
+                        </div>
+                    </article>
+
+                    <article class="card card--cta">
+                        <h3>Made to order</h3>
+                        <p>Weddings, birthdays, table centrepieces or a one-off gift: tell us your colours and we'll make it.</p>
+                        <div><a class="btn" href="/about.html#contact">Get in touch</a></div>
+                    </article>
                 </div>
-                <h3 class="text-xl font-roxy text-roxy-purple">WCP Bouquet</h3>
-                <p class="font-arts text-sm text-zinc-400 italic">Medium: Ribbon</p>
-            </div>
 
-        </div>
+                <div class="center mt">
+                    <a class="btn btn--ghost" href="/gallery.html">View the full gallery</a>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <div id="lightbox" onclick="closeLightbox()">
-        <img id="lightbox-img" src="">
-    </div>
-
-    <footer class="p-10 text-center border-t border-zinc-100 font-arts text-xs text-zinc-400 uppercase tracking-widest">
-        &copy; 2026 Roxy Arts Studio.
+    <footer class="site-footer">
+        <div class="container">
+            <div class="brand">Roxy Arts Studio</div>
+            <div>Handmade. Eccentric. Ours.</div>
+            <nav aria-label="Footer">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/gallery.html">Gallery</a></li>
+                    <li><a href="/about.html">About Us</a></li>
+                    <li><a href="/about.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <small>&copy; <span class="year">2026</span> Roxy Arts Studio. All rights reserved.</small>
+        </div>
     </footer>
 
-    <script>
-        function openLightbox(imagePath) {
-            const lightbox = document.getElementById('lightbox');
-            const lightboxImg = document.getElementById('lightbox-img');
-            
-            lightboxImg.src = imagePath;
-            lightbox.classList.add('active');
-            document.body.style.overflow = 'hidden'; // Stop scrolling
-        }
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Enlarged image">
+        <button class="lightbox-close" type="button" aria-label="Close">&times;</button>
+        <img src="" alt="">
+        <div class="lightbox-caption"></div>
+    </div>
 
-        function closeLightbox() {
-            const lightbox = document.getElementById('lightbox');
-            lightbox.classList.remove('active');
-            document.body.style.overflow = 'auto'; // Back to scrolling
-        }
-    </script>
-
+    <script src="/script.js"></script>
 </body>
 </html>

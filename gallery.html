@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Roxy Arts Studio</title>
+    <meta name="description" content="The full collection of handmade ribbon rose bouquets and centrepieces from Roxy Arts Studio.">
+    <link rel="canonical" href="https://roxyartstudio.com/gallery.html">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Roxy Arts Studio">
+    <meta property="og:title" content="Gallery | Roxy Arts Studio">
+    <meta property="og:description" content="The full collection of handmade ribbon rose bouquets and centrepieces.">
+    <meta property="og:url" content="https://roxyartstudio.com/gallery.html">
+    <meta property="og:image" content="https://roxyartstudio.com/images/share.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/favicon-32.png" type="image/png">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <meta name="theme-color" content="#5b2e91">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:wght@400;700&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+    <header class="site-header site-header--compact">
+        <a class="site-logo" href="/" aria-label="Roxy Arts Studio home">
+            <img src="/images/logo.webp" alt="Roxy Arts logo" width="392" height="474">
+        </a>
+        <nav class="site-nav" aria-label="Main">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/gallery.html" aria-current="page">Gallery</a></li>
+                <li><a href="/about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero container">
+            <h1>The Collection</h1>
+            <p>Every piece is made by hand from satin ribbon, so no two are ever quite the same. Click any photo to see it up close.</p>
+        </section>
+
+        <section class="section section--tint">
+            <div class="container">
+                <div class="grid">
+                    <!-- To add a piece: copy one <article> block, then change the images, title and description. -->
+                    <article class="card">
+                        <button class="card-media" type="button" data-full="/images/ribbon-bouquet.jpg" data-title="Ribbon Bouquet">
+                            <img src="/images/ribbon-bouquet-thumb.jpg" alt="Bouquet of purple and pink satin ribbon roses on a glass shelf" width="721" height="800" loading="lazy">
+                        </button>
+                        <div class="card-body">
+                            <h3>Ribbon Bouquet</h3>
+                            <p>A posy of hand-rolled satin roses in deep purple and pink.</p>
+                            <span class="card-tag">Satin ribbon</span>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <button class="card-media" type="button" data-full="/images/wcp-bouquet.jpg" data-title="WCP Bouquet">
+                            <img src="/images/wcp-bouquet-thumb.jpg" alt="Table centrepiece of blue and purple ribbon roses on a mirrored base with a table number card" width="689" height="800" loading="lazy">
+                        </button>
+                        <div class="card-body">
+                            <h3>WCP Bouquet</h3>
+                            <p>An event table centrepiece of blue and purple ribbon roses.</p>
+                            <span class="card-tag">Satin ribbon</span>
+                        </div>
+                    </article>
+
+                    <article class="card card--cta">
+                        <h3>Your idea next?</h3>
+                        <p>We make bouquets and centrepieces to order, in the colours and size you want.</p>
+                        <div><a class="btn" href="/about.html#contact">Get in touch</a></div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="brand">Roxy Arts Studio</div>
+            <div>Handmade. Eccentric. Ours.</div>
+            <nav aria-label="Footer">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/gallery.html">Gallery</a></li>
+                    <li><a href="/about.html">About Us</a></li>
+                    <li><a href="/about.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <small>&copy; 2026 Roxy Arts Studio. All rights reserved.</small>
+        </div>
+    </footer>
+
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Enlarged image">
+        <button class="lightbox-close" type="button" aria-label="Close">&times;</button>
+        <img src="" alt="">
+        <div class="lightbox-caption"></div>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+</html>
