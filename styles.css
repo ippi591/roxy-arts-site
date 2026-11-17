@@ -76,6 +76,21 @@ h1, h2, h3 {
 .hero h1 { font-size: clamp(2.4rem, 6vw, 4rem); }
 .hero p { max-width: 560px; margin: 0 auto; color: var(--muted); font-size: 1.15rem; }
 
+/* Home hero: faded bouquet behind the headline */
+.hero--bouquet {
+  position: relative; isolation: isolate;
+  min-height: 480px; padding: 40px 20px;
+  display: flex; flex-direction: column; justify-content: center; align-items: center;
+}
+.hero--bouquet::before {
+  content: ""; position: absolute; z-index: -1;
+  left: 50%; top: 50%; width: min(440px, 92vw); aspect-ratio: 1 / 1;
+  transform: translate(-50%, -50%);
+  background: url("/images/bouquet-circle.webp") center / contain no-repeat;
+  opacity: .22;
+}
+.hero--bouquet p { color: var(--ink); }
+
 .eyebrow {
   display: block; margin-bottom: 8px;
   color: var(--teal); font-weight: 700; font-size: 13px; letter-spacing: .14em; text-transform: uppercase;
