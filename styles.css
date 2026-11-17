@@ -150,6 +150,14 @@ h1, h2, h3 {
 .about-text h2 { font-size: clamp(2rem, 4vw, 2.6rem); }
 .about-text p { color: var(--muted); }
 
+@media (min-width: 820px) { .about--reverse { grid-template-columns: 1fr 1.3fr; } }
+.mia-img img {
+  width: 100%; height: auto; border-radius: var(--radius);
+  box-shadow: var(--shadow-lift); border: 8px solid #fff;
+  transform: rotate(1.5deg);
+}
+@media (max-width: 819px) { .about--reverse .mia-img { order: -1; } }
+
 .values { display: grid; gap: 24px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
 .value { background: #fff; border-radius: var(--radius); padding: 28px; box-shadow: var(--shadow); }
 .value h3 { font-size: 1.5rem; }
